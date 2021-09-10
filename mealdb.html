@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Database</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center fw-bold text-warning mt-3 mb-4">Find The Best Meals Here</h1>
+    <main>
+        <!-- Search result from input -->
+        <div class="input-group  w-50 mx-auto p-3">
+            <input id="search-field" type="text" class="form-control" placeholder="Search for the food you want"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchFood()" class="btn btn-warning p-3" type="button" id="search-btn">Search</button>
+        </div>
+        <!-- Get Result as Output -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 ps-3 pe-3">
+
+        </div>
+        <!-- Get Search Details -->
+        <div id="meal-details" class="mx-auto w-50">
+
+        </div>
+        <!-- search error -->
+        <div id="search-error">
+
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="meladb.js"></script>
+</body>
+<footer>
+    <h3 style="color: yellow;"></h3>
+</footer>
+
+</html>
